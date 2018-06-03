@@ -1,7 +1,7 @@
 <template>
     <div id="welcome">
         <div class="text-container">
-            <h1 class="title">{{title}}</h1>
+            <h1 class="title"> {{title}}</h1>
         </div>
     </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   name: "welcome",
   data() {
     return {
-      title: "Welcome to My Github Project Page"
+      title: "Welcome to My Github Project Page",
     };
   }
 };
@@ -39,6 +39,12 @@ export default {
 .title {
   font-size: 5rem;
   font-family: "Bowlby One SC", cursive;
-  color: white;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+   .title {
+       font-size: 2.5rem;
+   }
 }
 </style>

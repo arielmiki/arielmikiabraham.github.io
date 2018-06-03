@@ -1,13 +1,13 @@
 <template>
   <div>
     <Welcome/>
-    <Card class="my-4 mx-auto" />
+    <Project class="my-4 mx-auto" />
   </div>
 </template>
 
 <script>
 import Welcome from "./components/Welcome.vue";
-import Card from "./components/Card.vue";
+import Project from "./components/Project.vue";
 export default {
   name: "app",
   data() {
@@ -17,13 +17,14 @@ export default {
   },
   components: {
     Welcome,
-    Card
+    Project
   }
 };
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
 * {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
