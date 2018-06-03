@@ -1,30 +1,36 @@
 <template>
   <div>
-    <Banner/>
+    <Welcome/>
     <Card class="my-4 mx-auto" />
   </div>
 </template>
 
 <script>
-import Banner from "./components/Banner.vue";
+import Welcome from "./components/Welcome.vue";
 import Card from "./components/Card.vue";
 export default {
   name: "app",
+  data() {
+    return {
+      isLoading: true
+    };
+  },
   components: {
-    Banner,
+    Welcome,
     Card
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 0;
 }
 
 h1,
