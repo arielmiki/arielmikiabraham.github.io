@@ -1,5 +1,5 @@
 <template>
-    <b-card no-body :img-src="'https://picsum.photos/600/300/?image=' + repository.id %100" img-alt="Image" img-top>
+    <b-card no-body :img-src="'https://picsum.photos/600/300/?image=' + repository.id %1069" img-alt="Image" img-top>
         <b-card-body>
             <h5>{{repository.name}}</h5>
              <span><strong>Lang:</strong><i style="color:blue"> {{repository.language}}</i></span>
